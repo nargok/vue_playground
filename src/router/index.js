@@ -21,7 +21,11 @@ Vue.use(VueRouter)
   {
     path: '/count',
     component: () => import(/* webpackChunkName: "count" */ '@/views/Count.vue')
-  }
+  },
+  {
+    path: '/paging/:page',
+    component: () => import(/* webpackChunkName: "paging" */ '@/views/Paging.vue')
+  },
 ]
 
 const router = new VueRouter({
