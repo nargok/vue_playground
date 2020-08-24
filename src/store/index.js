@@ -5,8 +5,12 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    globalCount: 0,
   },
   mutations: {
+    globalIncrement(state) {
+      state.globalCount++;
+    }
   },
   actions: {
   },
